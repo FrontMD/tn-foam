@@ -282,7 +282,7 @@
 			height: 856px;
 			position: absolute;
 			bottom: -128px;
-			right: 193px;
+			right: 210px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -296,20 +296,14 @@
 	}
 
 	.block7 {
-		background: #fff;
-		padding-bottom: 60px;
-	}
-
-	@media (max-width: 768px) {
-		.block7 {
-			padding-bottom: 30px;
-		}
+		background: #222E40;
+		padding-bottom: 25px;
 	}
 
 	.block7_content {
 		max-width: 1530px;
 		margin: 0 auto;
-		padding: 10px 40px 0;
+		padding: 40px 40px 0;
 	}
 
 	@media (max-width: 1440px) {
@@ -364,8 +358,7 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		flex-flow: column nowrap;
-		background: #fff;
-		padding-top: 3.1833910035vw;
+		background: transparent;
 	}
 
 	.section6__title {
@@ -402,7 +395,6 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-flow: column nowrap;
-		margin-top: 3.1833910035vw;
 	}
 
 	.accordion {
@@ -423,10 +415,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		color: #191919;
+		color: #fff;
 		border-radius: 0;
 		padding-top: 1.5916955017vw;
-		border-top: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.accordion+.accordion .accordion__intro {
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
 	}
 
 	.accordion__intro p {
@@ -478,7 +473,7 @@
 	}
 
 	.accordion__active .accordion__content {
-		background: #fff;
+		background: transparent;
 		opacity: 1;
 		width: 100%;
 	}
@@ -505,14 +500,14 @@
 
 		100% {
 			transform-origin: 50% 50%;
-			transform: rotate(180deg);
+			transform: rotate(45deg);
 		}
 	}
 
 	@keyframes rotationClose {
 		0% {
 			transform-origin: 50% 50%;
-			transform: rotate(180deg);
+			transform: rotate(45deg);
 		}
 
 		100% {
@@ -529,7 +524,7 @@
 		width: 100%;
 		overflow: hidden;
 		position: relative;
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 		display: block;
 	}
 
@@ -549,17 +544,16 @@
 		line-height: 91.3%;
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
 		border-radius: 0;
-		padding-top: 23px;
-		border-top: 1px solid #ccc;
+		padding-top: 25px;
 	}
 
 	.kley-landing-questions .accordion__intro p {
 		position: relative;
 		display: inline-block;
 		width: 100%;
-		color: #191919;
+		color: #fff;
 		font-size: 30px;
 		font-style: normal;
 		font-weight: 600;
@@ -580,7 +574,7 @@
 		min-width: 50px;
 		height: 50px;
 		min-height: 50px;
-		background: #F0F0F0;
+		background: #384353;
 		border-radius: 50%;
 		display: flex;
 		justify-content: center;
@@ -643,6 +637,7 @@
 		opacity: 1;
 		width: 100%;
 		margin-top: 23px;
+		margin-bottom: 10px;
 	}
 
 	.kley-landing-documents {
@@ -659,14 +654,17 @@
 		justify-content: flex-start;
 		align-items: center;
 		cursor: pointer;
-		color: #191919;
+		color: #fff;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 150%;
 		text-decoration: underline;
 		transition: all 0.3s;
-		margin-bottom: 15px;
+	}
+
+	.kley-landing-documents .kley-landing-document+.kley-landing-document {
+		margin-top: 15px;
 	}
 
 	.kley-landing-documents .kley-landing-document svg {
@@ -684,10 +682,10 @@
 	.kley-landing-videos {
 		position: relative;
 		display: flex;
-		width: calc(100% + 40px);
+		width: 100%;
+		gap: 40px;
 		align-items: stretch;
 		flex-flow: row wrap;
-		margin-left: -40px;
 	}
 
 	.kley-landing-videos__wrap {
@@ -696,7 +694,6 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100%;
-		max-width: 894px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -720,14 +717,12 @@
 
 	.kley-landing-videos .kley-landing-video {
 		position: relative;
-		flex: 0 0 50%;
-		max-width: calc(50% - 40px);
+		flex: 0 0 33%;
+		max-width: calc((100% - 80px) / 3);
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin-left: 40px;
-		margin-bottom: 40px;
 		cursor: pointer;
 	}
 
@@ -830,11 +825,10 @@
 
 	.kley-landing-questions .slick-list {
 		margin: 0 -20px;
-		margin-bottom: 30px;
 	}
 
 	.kley-landing-questions .text__18 {
-		color: #191919;
+		color: #fff;
 		font-size: 18px;
 		font-style: normal;
 		font-weight: 400;
@@ -851,7 +845,7 @@
 	}
 
 	.kley-landing-questions .title__32 {
-		color: #191919;
+		color: #fff;
 		font-size: 30px;
 		font-style: normal;
 		font-weight: 600;
@@ -865,7 +859,7 @@
 	}
 
 	.kley-landing-questions .slarleft.slick-arrow {
-		background: #ECEEF1;
+		background: #384353;
 		width: 50px;
 		height: 50px;
 		min-width: 50px;
@@ -881,7 +875,7 @@
 	}
 
 	.kley-landing-questions .slarright.slick-arrow {
-		background: #ECEEF1;
+		background: #384353;
 		width: 50px;
 		height: 50px;
 		min-width: 50px;

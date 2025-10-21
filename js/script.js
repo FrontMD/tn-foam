@@ -71,4 +71,35 @@ $(document).ready(function(){
 			}}
 		]
 	});
+
+	/* Tabs */
+
+	function initTnfTabs() {
+		const tnfTabsSection = document.querySelector('[data-js="tnfTabs"]');
+		
+		if (!tnfTabsSection) return;
+
+		const tnfTabsThumbs = tnfTabsSection.querySelector('[data-js="tnfTabsThumbs"]');
+		const tnfTabsSwiper = tnfTabsSection.querySelector('[data-js="tnfTabsSwiper"]');
+
+		if (!tnfTabsThumbs || !tnfTabsSwiper) return;
+
+		const thumbsSwiper = new Swiper(tnfTabsThumbs, {
+			slidesPerView: 2,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			allowTouchMove: false
+		});
+
+		const mainSwiper = new Swiper(tnfTabsSwiper, {
+			slidesPerView: 1,
+			autoHeight: true,
+			thumbs: {
+			swiper: thumbsSwiper
+			},
+			allowTouchMove: false
+		});
+		}
+
+		initTnfTabs();
 })
