@@ -38,7 +38,7 @@
 						<li class="tnf-list__item">Клей-пена ТЕХНОНИКОЛЬ 500 FAST<sup>*</sup></li>
 					</ul>
 					<a href="javascript:void(0);" class="tnf-btn">КУПИТЬ В ИНТЕРНЕТ-МАГАЗИНЕ</a>
-					<div class="tnf-intro__note">*Fast — быстрый</div>
+					<div class="tnf-intro__note">*Фаст - быстрый</div>
 				</div>
 
 				<div class="tnf-intro__img">
@@ -251,6 +251,9 @@
 					</div>
 					<div class="tnf-purpose__slide swiper-slide">
 						<div class="tnf-purpose__container">
+							<div class="tnf-purpose__bg">
+								<img src="img/tnf_purpose_bg_2.jpg" alt="">
+							</div>
 							<div class="tnf-purpose__content">
 								<h2 class="tnf-section__title">Надежная и быстрая
 									<br><span>Фиксация</span>
@@ -280,8 +283,7 @@
 			<div class="block7_content">
 				<div class="section6 kley-landing-questions" id="surfaces">
 					<div class="accordions">
-						<div class="accordion" data-aos="flip-up" data-aos-duration="500" data-aos-delay="800"
-							data-aos-offset="20">
+						<div class="accordion">
 							<div class="container">
 								<div class="accordion__intro">
 									<p>Статьи</p>
@@ -355,8 +357,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion" data-aos="flip-up" data-aos-duration="500" data-aos-delay="600"
-							data-aos-offset="20">
+						<div class="accordion">
 							<div class="container">
 								<div class="accordion__intro">
 									<p>Документация</p>
@@ -488,8 +489,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400"
-							data-aos-offset="20">
+						<div class="accordion">
 							<div class="container">
 								<div class="accordion__intro">
 									<p>Видео </p>
@@ -538,8 +538,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="accordion" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400"
-							data-aos-offset="20">
+						<div class="accordion">
 							<div class="container">
 								<div class="accordion__intro">
 									<p>Рекламные материалы</p>
@@ -675,24 +674,6 @@
 		</section>
 
 	</div>
-	<script src="js/aos.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const sgPurposeCards = document.querySelectorAll('[data-js="sgPurposeCard"]')
-
-			if (sgPurposeCards.length > 0) {
-				const ww = window.innerWidth;
-
-				sgPurposeCards.forEach(card => {
-					if (ww < 1201) {
-						card.removeAttribute('data-aos')
-					}
-				})
-			}
-
-			AOS.init();
-		})
-	</script>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/slick.min.js"></script>
